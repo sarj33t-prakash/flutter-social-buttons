@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sarj33t_login_btns/social_signin_buttons.dart';
+import 'package:sarj33t_login_btns/sarj33t_login_btns.dart';
 
 void main() {
   runApp(const MyApp());
