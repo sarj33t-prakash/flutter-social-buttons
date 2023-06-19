@@ -4,7 +4,7 @@ description: A Flutter package for both android and iOS which provides Social si
 
 version: 0.0.5
 
-homepage: https://github.com/sarj33t-prakash/first-lib
+homepage: https://github.com/sarj33t-prakash/flutter-social-buttons
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
