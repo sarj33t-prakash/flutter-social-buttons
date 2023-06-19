@@ -16,20 +16,20 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Home Page'),
+      home: const LoginPage(title: 'Login'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key, required this.title});
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -45,56 +45,56 @@ class _MyHomePageState extends State<MyHomePage> {
             SignInButton(
               Buttons.google,
               onPressed: (){
-                /// Login with Google
+                debugPrint("Login with Google");
               },
               shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.facebook,
               onPressed: (){
-                /// Login with Facebook
+                debugPrint("Login with Facebook");
               },
               shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.twitter,
               onPressed: (){
-                /// Login with Facebook
+                debugPrint("Login with Twitter");
               },
               shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.apple,
               onPressed: (){
-                /// Login with Facebook
+                debugPrint("Login with Apple");
               },
               shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.microsoft,
               onPressed: (){
-                /// Login with Facebook
+                debugPrint("Login with Microsoft");
               },
               shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.gitHub,
               onPressed: (){
-                /// Login with Facebook
+                debugPrint("Login with GitHub");
               },
               shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.linkedIn,
               onPressed: (){
-                /// Login with Facebook
+                debugPrint("Login with LinkedIn");
               },
               shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.email,
               onPressed: (){
-                /// Login with Facebook
+                debugPrint("Login with Email");
               },
               shape: const RoundedRectangleBorder(),
             ),
