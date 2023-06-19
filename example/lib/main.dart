@@ -47,56 +47,48 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: (){
                 debugPrint("Login with Google");
               },
-              shape: const RoundedRectangleBorder(),
             ),
             SignInButton(
               Buttons.facebook,
               onPressed: (){
                 debugPrint("Login with Facebook");
-              },
-              shape: const RoundedRectangleBorder(),
+              }
             ),
             SignInButton(
               Buttons.twitter,
               onPressed: (){
                 debugPrint("Login with Twitter");
-              },
-              shape: const RoundedRectangleBorder(),
+              }
             ),
             SignInButton(
               Buttons.apple,
               onPressed: (){
                 debugPrint("Login with Apple");
-              },
-              shape: const RoundedRectangleBorder(),
+              }
             ),
             SignInButton(
               Buttons.microsoft,
               onPressed: (){
                 debugPrint("Login with Microsoft");
-              },
-              shape: const RoundedRectangleBorder(),
+              }
             ),
             SignInButton(
               Buttons.gitHub,
               onPressed: (){
                 debugPrint("Login with GitHub");
-              },
-              shape: const RoundedRectangleBorder(),
+              }
             ),
             SignInButton(
               Buttons.linkedIn,
               onPressed: (){
                 debugPrint("Login with LinkedIn");
-              },
-              shape: const RoundedRectangleBorder(),
+              }
             ),
             SignInButton(
               Buttons.email,
               onPressed: (){
                 debugPrint("Login with Email");
-              },
-              shape: const RoundedRectangleBorder(),
+              }
             ),
           ],
         ),
