@@ -29,11 +29,10 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey("Email"),
           text: text ?? "Sign In With Email",
           icon: Icons.email,
-
           onPressed: onPressed,
           backgroundColor: Colors.white,
           textColor: Colors.black,
-          iconColor: Colors.black,
+          iconColor: Colors.orangeAccent,
           shape: shape?? ButtonTheme.of(context).shape,
         );
       case Buttons.google:
@@ -41,7 +40,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey("Google"),
           text: text ?? "Sign In With Google",
           image: Container(
-            margin: const EdgeInsets.fromLTRB(0.0, 0.0, 5.0, 0.0),
+            margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(8.0),
               child: const Image(
@@ -50,13 +49,14 @@ class SignInButton extends StatelessWidget {
                   package: 'sarj33t_login_btns',
                 ),
                 height: 25.0,
+                width: 20.0,
               ),
             ),
           ),
           onPressed: onPressed,
           backgroundColor: Colors.white,
           textColor: Colors.black,
-          iconColor: Colors.black,
+          iconColor: Colors.blue,
           shape: shape?? ButtonTheme.of(context).shape,
         );
       case Buttons.facebook:
@@ -89,7 +89,7 @@ class SignInButton extends StatelessWidget {
           onPressed: onPressed,
           backgroundColor: Colors.white,
           textColor: Colors.black,
-          iconColor: Colors.black,
+          iconColor: Colors.red,
           shape: shape?? ButtonTheme.of(context).shape,
         );
       case Buttons.linkedIn:
@@ -107,30 +107,18 @@ class SignInButton extends StatelessWidget {
         return Btn(
           key: const ValueKey("Microsoft"),
           text: text ?? "Sign In With Microsoft",
-          image: Container(
-            margin: const EdgeInsets.fromLTRB(0.0, 0.0, 5.0, 0.0),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(0.0),
-              child: const Image(
-                image: AssetImage(
-                  'assets/microsoft_logo.png',
-                  package: 'sarj33t_login_btns',
-                ),
-                height: 27.0,
-              ),
-            ),
-          ),
+          icon: FontAwesomeIcons.microsoft,
           onPressed: onPressed,
           backgroundColor: Colors.white,
           textColor: Colors.black,
-          iconColor: Colors.black,
+          iconColor: Colors.blue,
           shape: shape?? ButtonTheme.of(context).shape,
         );
       case Buttons.twitter:
         return Btn(
           key: const ValueKey("Twitter"),
           text: text ?? "Sign In With Twitter",
-          icon:FontAwesomeIcons.twitter,
+          icon: FontAwesomeIcons.twitter,
           onPressed: onPressed,
           backgroundColor: const Color(0xFF1DA1F2),
           textColor: Colors.white,
